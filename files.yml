@@ -1,0 +1,17 @@
+server:
+  port: 8992
+
+spring:
+  application:
+    name: filtes
+  cloud:                  #配置consul依赖
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+  resources:
+    static-locations: file:${upload.dir}
+
+upload:
+  dir: D:/JDK/Spring BDC/Spring Cloud/ems_parent/ems_filtes/src/main/resources/file
