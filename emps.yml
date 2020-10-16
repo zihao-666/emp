@@ -19,5 +19,5 @@ spring:
     mapper-locations: classpath:com/zihao/mapper/*.xml
     type-aliases-package: com.zihao.bean
     
-name: 1234567 
+name: 12345678
  
